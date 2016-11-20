@@ -1,6 +1,6 @@
 import {browser, element, by} from "protractor";
 
-export class JanodempCPage {
+export class JanodempPage {
   navigateTo() {
     return browser.get('/');
   }

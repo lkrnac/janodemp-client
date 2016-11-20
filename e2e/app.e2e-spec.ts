@@ -1,10 +1,10 @@
-import {JanodempCPage} from "./app.po";
+import {JanodempPage} from "./app.po";
 
 describe('janodemp-client App', function() {
-  let page: JanodempCPage;
+  let page: JanodempPage;
 
   beforeEach(() => {
-    page = new JanodempCPage();
+    page = new JanodempPage();
   });
 
   it('should display message saying app works', () => {
