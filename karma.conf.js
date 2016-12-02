@@ -1,15 +1,20 @@
+'use strict';
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/0.13/config/configuration-file.html
+const karmaJasmine = require('karma-jasmine');
+const karmaChromeLauncher = require('karma-chrome-launcher');
+const karmaRemapIstanbul = require('karma-remap-istanbul');
+const karma = require('angular-cli/plugins/karma');
 
 module.exports = function (config) {
   config.set({
     basePath: '',
     frameworks: ['jasmine', 'angular-cli'],
     plugins: [
-      require('karma-jasmine'),
-      require('karma-chrome-launcher'),
-      require('karma-remap-istanbul'),
-      require('angular-cli/plugins/karma')
+      karmaJasmine,
+      karmaChromeLauncher,
+      karmaRemapIstanbul,
+      karma
     ],
     files: [
       { pattern: './src/test.ts', watched: false }
@@ -28,8 +33,8 @@ module.exports = function (config) {
       environment: 'dev'
     },
     reporters: config.angularCli && config.angularCli.codeCoverage
-              ? ['progress', 'karma-remap-istanbul']
-              : ['progress'],
+      ? ['progress', 'karma-remap-istanbul']
+      : ['progress'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
