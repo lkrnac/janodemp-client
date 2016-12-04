@@ -1,13 +1,14 @@
 /* tslint:disable:no-unused-variable */
-
 import {TestBed, async} from "@angular/core/testing";
 import {AppComponent} from "./app.component";
+import {PlayerComponent} from "./player/player.component";
 
 describe('App: Janodemp', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        PlayerComponent
       ],
     });
   });
@@ -29,5 +30,12 @@ describe('App: Janodemp', () => {
     fixture.detectChanges();
     let compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('app works!');
+  }));
+
+  it('renders player component', async(() => {
+    let fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    let compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('app-player')).toBeTruthy();
   }));
 });
