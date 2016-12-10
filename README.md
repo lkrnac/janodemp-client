@@ -1,4 +1,10 @@
-# JanodempC
+[ ![Codeship Status for lkrnac/janodemp-client](https://app.codeship.com/projects/fcab9ca0-9135-0134-9099-5aeda33c2226/status?branch=master)](https://app.codeship.com/projects/185848)
+[![Coverage Status](https://coveralls.io/repos/github/lkrnac/janodemp-client/badge.svg?branch=master)](https://coveralls.io/github/lkrnac/janodemp-client?branch=master)
+[![dependencies Status](https://david-dm.org/lkrnac/janodemp-client/status.svg)](https://david-dm.org/lkrnac/janodemp-client)
+[![devDependencies Status](https://david-dm.org/lkrnac/janodemp-client/dev-status.svg)](https://david-dm.org/lkrnac/janodemp-client?type=dev)
+[![GitHub license](https://img.shields.io/github/license/lkrnac/janodemp-client.svg)](https://github.com/lkrnac/janodemp-client)
+
+# janodemp-client
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.19-3.
 
