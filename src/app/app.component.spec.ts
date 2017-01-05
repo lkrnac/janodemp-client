@@ -11,6 +11,7 @@ describe('App: Janodemp', () => {
         PlayerComponent
       ],
     });
+    TestBed.compileComponents();
   });
 
   it('should create the app', async(() => {
