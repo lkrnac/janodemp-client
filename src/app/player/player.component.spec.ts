@@ -2,7 +2,7 @@
 import {async, ComponentFixture, TestBed} from "@angular/core/testing";
 import {PlayerComponent} from "./player.component";
 
-describe('PlayerComponent', () => {
+describe("PlayerComponent", () => {
   let component: PlayerComponent;
   let fixture: ComponentFixture<PlayerComponent>;
 
@@ -20,13 +20,13 @@ describe('PlayerComponent', () => {
     fixture.detectChanges();
   });
 
-  it('renders audio element with correct source', () => {
+  it("renders audio element with correct source", () => {
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('audio').src).toContain('/dummyUrl');
+    expect(compiled.querySelector("audio").src).toContain("/dummyUrl");
   });
 
-  it('shows audio controls', () => {
+  it("shows audio controls", () => {
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('audio').controls).toBeTruthy();
+    expect(compiled.querySelector("audio").controls).toBeTruthy();
   });
 });
